@@ -75,7 +75,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                     <td>
                         <?= htmlspecialchars(
-                            $activity['activity_log_id_']
+                            $activity['activity_log_id']
                         ) ?>
                     </td>
 
@@ -111,7 +111,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                     <td>
                         <?= htmlspecialchars(
-                            $activity['activity_log_user_agent']
+                            $activity['activity_log_user_agents']
                         ) ?>
                     </td>
 
@@ -124,6 +124,8 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </tr>
 
             <?php endforeach; ?>
+
+           
 
         </tbody>
 
